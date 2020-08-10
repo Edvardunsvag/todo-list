@@ -7,7 +7,7 @@ export default class TodoInput extends Component {
         return (
             <div className='card card-body'>
                 <form onSubmit={handleSubmit}>
-                    <div class='input-group mb-3'>
+                    <div className='input-group mb-3'>
                         <div className='input-group-prepend'>
                             <div className='input-group-text bg-primary'>
                                 <i className='fas fa-book'></i>
@@ -16,7 +16,7 @@ export default class TodoInput extends Component {
                         <input
                             type='text'
                             className='form-control text-capitalize'
-                            value={this.item}
+                            value={item}
                             placeholder='Add Item'
                             onChange={handleChange}
                         />

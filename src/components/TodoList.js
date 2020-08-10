@@ -8,8 +8,6 @@ export default class TodoList extends Component {
             items,
             handleDelete,
             clearList,
-            handleChange,
-            handleSubmit,
             handleEdit,
             editItem,
         } = this.props;
