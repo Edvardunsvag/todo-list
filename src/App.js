@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import TodoList from './components/TodoList';
 import TodoInput from './components/TodoInput';
 import { v4 as uuid } from 'uuid';
@@ -12,6 +11,7 @@ function App() {
     const [items, setItems] = useState([]);
 
     const handleChange = (e) => {
+        console.log(e.target.value);
         setItem({ item: e.target.value, id: item.id, editItem: item.editItem });
     };
 

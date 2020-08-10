@@ -16,8 +16,9 @@ export default class TodoList extends Component {
             <div>
                 <h3 className='text-center mt-5 text-capitalize'>Todo List</h3>
                 <ul className='list-group'>
-                    {items.map((i) => (
+                    {items.map((i, index) => (
                         <Item
+                            key={index}
                             editItem={editItem}
                             handleEdit={handleEdit}
                             name={i.item}
